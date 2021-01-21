@@ -1,7 +1,0 @@
-#!/bin/sh
-IMAGE_SOURCE=$1
-IMAGE_DEST=$2
-
-echo "IMAGE_SOURCE: " $IMAGE_SOURCE
-echo "IMAGE_DEST: " $IMAGE_DEST
-skopeo copy $IMAGE_SOURCE dir:$IMAGE_DEST
