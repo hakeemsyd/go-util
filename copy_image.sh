@@ -16,5 +16,4 @@ fi
 
 echo "IMAGESOURCE: " $IMAGESOURCE
 echo "DEST: " $DEST
-
 skopeo copy $IMAGESOURCE dir:$DEST
