@@ -11,9 +11,11 @@ type Init struct {
 }
 
 // CopyImageFromDockerRepository return script path response
-func (e *Init) CopyImageFromDockerRepository() (string) {
+func CopyImageFromDockerRepository(x string, y string) (string) {
     fmt.Println("Started Downloading Image.")
-    cmd, err := exec.Command("/bin/sh", "copy_image.sh", e.IMAGE_SOURCE, e.IMAGE_DEST).Output()
+    fmt.Println(e.IMAGE_SOURCE)
+    fmt.Println(e.IMAGE_DEST)
+    cmd, err := exec.Command("/bin/sh", "copy_image.sh", e.IMAGE_SOURCE , e.IMAGE_DEST).Output()
     if err != nil {
     fmt.Printf("error %s", err)
     }

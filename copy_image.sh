@@ -1,19 +1,7 @@
 #!/bin/sh
-IMAGESOURCE=$1
-DEST=$2
+IMAGE_SOURCE=$1
+IMAGE_DEST=$2
 
-if test -z "$IMAGESOURCE" 
-then
-      echo "IMAGESOURCE is empty"
-      exit 1
-fi
-
-if test -z "$DEST" 
-then
-      echo "DEST is empty"
-      exit 1
-fi
-
-echo "IMAGESOURCE: " $IMAGESOURCE
-echo "DEST: " $DEST
-skopeo copy $IMAGESOURCE dir:$DEST
+echo "IMAGE_SOURCE: " $IMAGE_SOURCE
+echo "IMAGE_DEST: " $IMAGE_DEST
+skopeo copy $IMAGE_SOURCE dir:$IMAGE_DEST
