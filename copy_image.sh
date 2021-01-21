@@ -1,0 +1,6 @@
+#!/bin/sh
+IMAGESOURCE=$1
+DEST=$2
+echo "IMAGESOURCE: " $IMAGESOURCE
+echo "DEST: " $DEST
+skopeo copy $IMAGESOURCE dir:$DEST
